@@ -10,7 +10,7 @@ interface ContainerAcaraProps {
 const greateVibe = Great_Vibes({ weight: "400", subsets: ["latin"] })
 export default function AkadAndResepsi({ title, jam }: ContainerAcaraProps) {
   return (
-    <div className="w-10/12 mx-auto text-center shadow-lg shadow-slate-400 py-4 my-8">
+    <div className="w-10/12 mx-auto text-center shadow-lg rounded-md bg-slate-100 shadow-slate-400 py-4 my-8 px-4">
       <h1 className={`${greateVibe.className} text-4xl`}>{title}</h1>
       <div className="flex items-start justify-center gap-2 mt-10">
         <FaRegCalendarCheck size={20} />
@@ -21,7 +21,7 @@ export default function AkadAndResepsi({ title, jam }: ContainerAcaraProps) {
         <h2>{jam} WIB</h2>
       </div>
       <h1 className="font-semibold my-4">Lokasi / Tempat Acara:</h1>
-      <p>Jl.Tanjung Barat RT.08/RW.02, Kel. Tanjung Barat Kec. Jagakarsa Jakarta Selatan</p>
+      <p>Jl.Tanjung Barat RT.08/RW.02 No.18R, Kel. Tanjung Barat Kec. Jagakarsa Jakarta Selatan</p>
     </div>
   )
 }

@@ -1,13 +1,14 @@
 import Countdown from "@/components/Countdown"
 import { Sacramento } from "next/font/google"
+import Image from "next/image"
 
 const sacramento = Sacramento({ weight: "400", subsets: ["latin"] })
 
 export default function NavComponent() {
-  const targetDate = new Date("2024-06-23T10:15:00")
   return (
-    <nav className="w-full h-screen bg-slate-700 text-white  flex justify-center items-center">
-      <div className="text-center flex flex-col gap-2">
+    <nav className="w-full  h-screen relative">
+      <Image src={"/background/3.png"} alt={"background"} width={2000} height={2000} className="w-full h-full absolute top-0 object-cover" />
+      <div className="text-center h-full flex flex-col gap-2 items-center justify-center">
         <h2 className="font-semibold text-2xl">The Wedding</h2>
         <h1 className={`${sacramento.className} text-4xl`}>Sumarni</h1>
         <h1 className={`${sacramento.className} text-4xl`}> & </h1>
