@@ -8,7 +8,6 @@ export default function HomeComponents() {
   return (
     <div className="w-full">
       <Opening />
-
       <Acara />
       <Doa />
     </div>
