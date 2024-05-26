@@ -1,29 +1,33 @@
-import Countdown from "@/components/elements/Countdown"
 import ContainerFramer from "@/components/elements/ContainerFramer"
-import { Sacramento } from "next/font/google"
-import Image from "next/image"
-
-const sacramento = Sacramento({ weight: "400", subsets: ["latin"] })
+import { FaMapMarkerAlt, FaRocketchat } from "react-icons/fa"
+import { FaHeart, FaMapLocation } from "react-icons/fa6"
+import { IoHome } from "react-icons/io5"
 
 export default function NavComponent() {
   return (
     <ContainerFramer>
-      <nav className="w-full  h-screen relative" id="home">
-        <Image src={"/background/3.png"} alt={"background"} width={2000} height={2000} className="w-full h-full absolute top-0 object-cover" />
-
-        <div className="text-center h-full flex flex-col gap-2 items-center justify-center">
-          <h2 className="font-semibold text-2xl">The Wedding</h2>
-          <h1 className={`${sacramento.className} text-4xl`}>Sumarni</h1>
-          <h1 className={`${sacramento.className} text-4xl`}> & </h1>
-          <h1 className={`${sacramento.className} text-4xl`}>Muhammad Amsori</h1>
-          <div className="flex items-start justify-center gap-3 text-xl">
-            <h2>Minggu</h2>
-            <div className="border-x-2 border-white px-3">
-              <h2 className="font-semibold ">23</h2>
-              <h2>2024</h2>
-            </div>
-            <h2>Juni</h2>
-          </div>
+      <nav className="fixed bottom-0 p-2 bg-slate-100 left-0 right-0 z-50">
+        <div className="w-full grid grid-cols-5 gap-2">
+          <a href="#home" className="flex flex-col items-center justify-center font-semibold text-sm">
+            <IoHome size={15} />
+            <h2>Home</h2>
+          </a>
+          <a href="#mempelai" className="flex flex-col items-center justify-center font-semibold text-sm">
+            <FaHeart size={15} />
+            <h2>Mempelai</h2>
+          </a>
+          <a href="#acara" className="flex flex-col items-center justify-center font-semibold text-sm">
+            <FaMapMarkerAlt size={15} />
+            <h2>Acara</h2>
+          </a>
+          <a href="#lokasi" className="flex flex-col items-center justify-center font-semibold text-sm">
+            <FaMapLocation size={15} />
+            <h2>Lokasi</h2>
+          </a>
+          <a href="#ucapan" className="flex flex-col items-center justify-center font-semibold text-sm">
+            <FaRocketchat size={15} />
+            <h2>Ucapan</h2>
+          </a>
         </div>
       </nav>
     </ContainerFramer>

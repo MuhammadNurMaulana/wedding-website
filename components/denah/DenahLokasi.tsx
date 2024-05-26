@@ -13,7 +13,8 @@ export default function DenahLokasi() {
         className="w-full h-[370px] my-4"
         title="denah lokasi"
       />
-      <MapLink lat="-6.309851" lng="106.849977" />
+      <MapLink lat="-6.309851" lng="106.849977" title="Lihat Lokasi Acara" />
+      <MapLink lat="-6.309404" lng="106.850162" title="Lihat Lokasi Untuk Parkir" />
     </div>
   )
 }
